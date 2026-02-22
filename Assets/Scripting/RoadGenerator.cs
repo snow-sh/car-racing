@@ -3,10 +3,10 @@ using System.Collections.Generic;
 
 public class RoadGenerator : MonoBehaviour
 {
-    public GameObject[] roadPrefabs; // Your 4 road pieces
-    public Transform player;         // Your car
-    private float spawnZ = 0;        // Where the next road starts
-    private float roadLength = 100;  // Match your plane length
+    public GameObject[] roadPrefabs; 
+    public Transform player;         
+    private float spawnZ = 0;        
+    private float roadLength = 100;  
     private int roadsOnScreen = 5;
     private List<GameObject> activeRoads = new List<GameObject>();
 
