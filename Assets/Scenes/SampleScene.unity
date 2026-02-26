@@ -3016,8 +3016,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 188566645}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.00597835, y: 0.988078, z: -0.1486144, w: 0.03974767}
-  m_LocalPosition: {x: 1.4914346, y: 2.6700015, z: 253.15256}
+  m_LocalRotation: {x: 0.14733087, y: -0.13554306, z: 0.020386709, w: 0.97954386}
+  m_LocalPosition: {x: 4.621176, y: 2.6700015, z: 178.95}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3737,8 +3737,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 330585543}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.0059783505, y: 0.988078, z: -0.14861442, w: 0.03974767}
-  m_LocalPosition: {x: 1.4914346, y: 2.6700015, z: 253.15256}
+  m_LocalRotation: {x: 0.14733087, y: -0.13554306, z: 0.020386713, w: 0.9795438}
+  m_LocalPosition: {x: 4.621176, y: 2.6700015, z: 178.95}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -17165,7 +17165,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1064512383}
   serializedVersion: 5
-  m_Mass: 1
+  m_Mass: 1500
   m_LinearDamping: 0
   m_AngularDamping: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -17192,14 +17192,14 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1064512383}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: 0.68067473, z: -0, w: 0.7325858}
-  m_LocalPosition: {x: 5132.2026, y: -48.1, z: -8304.5}
+  m_LocalRotation: {x: -0, y: -0.7952428, z: -0, w: 0.6062912}
+  m_LocalPosition: {x: -6684, y: -48.1, z: 7583}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 554827699}
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 85.793, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -105.356, z: 0}
 --- !u!1 &1065901295
 GameObject:
   m_ObjectHideFlags: 0
@@ -24008,9 +24008,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CarHandler
   rb: {fileID: 1604860719}
+  playerCam: {fileID: 330585545}
+  engineSound: {fileID: 0}
   speed: 100
   turnSpeed: 100
   maxVelocity: 100
+  minFOV: 60
+  maxFOV: 80
+  minPitch: 0.8
+  maxPitch: 2.5
 --- !u!114 &1604860721
 MonoBehaviour:
   m_ObjectHideFlags: 0
