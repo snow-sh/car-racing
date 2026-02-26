@@ -6,8 +6,8 @@ public class RoadGenerator : MonoBehaviour
     public GameObject[] roadPrefabs; 
     public Transform player;         
     private float spawnZ = 0;        
-    private float roadLength = 100;  
-    private int roadsOnScreen = 5;
+    private float roadLength = 250;  
+    private int roadsOnScreen = 4;
     private List<GameObject> activeRoads = new List<GameObject>();
 
     void Start()
