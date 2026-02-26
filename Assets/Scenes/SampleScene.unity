@@ -23956,7 +23956,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7514724142118017493, guid: 8a8f57edf3523624eb9f886833e8e97a, type: 3}
       propertyPath: m_Mass
-      value: 100
+      value: 1500
       objectReference: {fileID: 0}
     - target: {fileID: 7514724142118017493, guid: 8a8f57edf3523624eb9f886833e8e97a, type: 3}
       propertyPath: m_Interpolate
@@ -24010,9 +24010,9 @@ MonoBehaviour:
   rb: {fileID: 1604860719}
   playerCam: {fileID: 330585545}
   engineSound: {fileID: 0}
-  speed: 100
-  turnSpeed: 100
-  maxVelocity: 100
+  speed: 50
+  turnSpeed: 50
+  maxVelocity: 50
   minFOV: 60
   maxFOV: 80
   minPitch: 0.8

@@ -30,7 +30,8 @@ public class RoadGenerator : MonoBehaviour
 
     void SpawnRoad(int index)
     {
-        GameObject road = Instantiate(roadPrefabs[index], transform.forward * spawnZ, Quaternion.identity);
+        // GameObject road = Instantiate(roadPrefabs[index], transform.forward * spawnZ, Quaternion.identity);
+        GameObject road = Instantiate(roadPrefabs[index], new Vector3(0, 0, spawnZ), Quaternion.identity);
         activeRoads.Add(road);
         spawnZ += roadLength;
     }
