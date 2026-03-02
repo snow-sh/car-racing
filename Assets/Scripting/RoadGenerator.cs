@@ -28,13 +28,30 @@ public class RoadGenerator : MonoBehaviour
         }
     }
 
-    void SpawnRoad(int index)
+    // void SpawnRoad(int index)
+    // {
+    //     // GameObject road = Instantiate(roadPrefabs[index], transform.forward * spawnZ, Quaternion.identity);
+    //     GameObject road = Instantiate(roadPrefabs[index], new Vector3(0, 0, spawnZ), Quaternion.identity);
+    //     activeRoads.Add(road);
+    //     spawnZ += roadLength;
+    // }
+
+void SpawnRoad(int index)
+{
+    Vector3 spawnPos = new Vector3(0, 0, spawnZ);
+    GameObject road = Instantiate(roadPrefabs[index], spawnPos, Quaternion.identity);
+    
+    // This is the "Nudge" code
+    // It finds the Road Architect script on the new road and tells it to wake up
+    RoadArchitect.Road roadScript = road.GetComponentInChildren<RoadArchitect.Road>();
+    if (roadScript != null)
     {
-        // GameObject road = Instantiate(roadPrefabs[index], transform.forward * spawnZ, Quaternion.identity);
-        GameObject road = Instantiate(roadPrefabs[index], new Vector3(0, 0, spawnZ), Quaternion.identity);
-        activeRoads.Add(road);
-        spawnZ += roadLength;
+        roadScript.UpdateRoad(); // This does the 0.03 to 0.04 change for you!
     }
+
+    activeRoads.Add(road);
+    spawnZ += roadLength;
+}
 
     void DeleteOldRoad()
     {
